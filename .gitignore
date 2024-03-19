@@ -1,6 +1,7 @@
 *.pdf
 *.cache
 *.osm
+/dem/
 /osm2pgsql/*.xml
 /contour/
 /osm-files/

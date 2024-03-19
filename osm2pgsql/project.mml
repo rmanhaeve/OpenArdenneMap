@@ -3,6 +3,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "landuse",
@@ -21,8 +24,9 @@
     },
     {
       "Datasource": {
-        "file": "/mnt/tera/ChampsLibres/Projets/OSM/CyclOSM/hillshade/data/dem_be_10x10_hillshade_semi_transparent_3857.tif",
-        "type": "gdal"
+        "file": "../dem/dem_be_10x10_hillshade_semi_transparent.tif",
+        "srs":, "+proj=lcc +lat_0=90 +lon_0=4.36748666666667 +lat_1=51.1666672333333 +lat_2=49.8333339 +x_0=150000.013 +y_0=5400088.438 +ellps=intl +towgs84=-106.8686,52.2978,-103.7239,-0.3366,0.457,-1.8422,-1.2747 +units=m +no_defs +type=crs",
+         "type": "gdal"
       },
       "geometry": "raster",
       "id": "hillshade",
@@ -32,7 +36,8 @@
     {
       "Datasource": {
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
-        "file": "../contour/contours_3857.shp",
+        "file": "../dem/contours.shp",
+        "srs":, "+proj=lcc +lat_0=90 +lon_0=4.36748666666667 +lat_1=51.1666672333333 +lat_2=49.8333339 +x_0=150000.013 +y_0=5400088.438 +ellps=intl +towgs84=-106.8686,52.2978,-103.7239,-0.3366,0.457,-1.8422,-1.2747 +units=m +no_defs +type=crs",
         "id": "contour",
         "type": "shape"
       },
@@ -44,6 +49,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "table":
@@ -62,6 +70,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "table":
@@ -79,6 +90,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "water",
@@ -98,6 +112,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "landuse_overlays",
@@ -118,6 +135,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "aeroway",
@@ -137,6 +157,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "tunnel",
@@ -172,6 +195,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "table":
@@ -200,6 +226,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "bridge",
@@ -235,6 +264,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "bridge_symbol",
@@ -258,6 +290,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "cemetery",
@@ -278,6 +313,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "table":
@@ -296,6 +334,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "table":
@@ -320,6 +361,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "linear_features",
@@ -337,6 +381,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "trails",
@@ -415,6 +462,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "point_features",
@@ -461,6 +511,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "pitch",
@@ -494,6 +547,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "place",
@@ -514,6 +570,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "landuse_label",
@@ -540,6 +599,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "waterway_label",
@@ -567,6 +629,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "table":
@@ -591,6 +656,9 @@
     {
       "Datasource": {
         "dbname": "osmpg_db",
+        "host": "localhost",
+        "user": "osmpg",
+        "password":"postgres",
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "trails_start",

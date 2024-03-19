@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  mapnik:
+    build: .
+    volumes:
+      - ..:/var/OpenArdenneMap
+    network_mode: "service:db"
+  db:
+    image: postgis/postgis:13-3.2
+    ports:
+      - "5439:5432"
+      - "5000:5000"
+    environment:
+      - POSTGRES_USER=osmpg
+      - POSTGRES_DB=osmpg_db
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - "./.data/db/data:/var/lib/postgresql/data"
